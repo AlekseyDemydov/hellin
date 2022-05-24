@@ -6,8 +6,24 @@
 // Стили для файла с примером HTML-фрагмента
  
  @import './utils/variables';
+ @import './utils/hiden';
+ @import './utils/mixine';
  @import './base/base';
  @import './base/container';
+ @import './base/card-set';
+ @import './layout/about';
+ @import './layout/advantages';
+ @import './layout/benefits';
+ @import './layout/contacts';
+ @import './layout/footer';
+ @import './layout/form';
+ @import './layout/guarantee';
+ @import './layout/header';
+ @import './layout/hero';
+ @import './layout/how-we-do';
+ @import './layout/problems';
+ @import './layout/program';
+ @import './layout/reviews';
 
  
 
