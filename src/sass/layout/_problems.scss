@@ -1,0 +1,17 @@
+.problems{
+    background-color: aquamarine;
+}
+.problems__tatel{
+
+}
+.problems_laibl{
+
+}
+.problems__list{
+    @include mq(tab){
+        --card-item:2;
+    }
+    @include mq(desk){
+        --card-item:3;
+    }
+}
