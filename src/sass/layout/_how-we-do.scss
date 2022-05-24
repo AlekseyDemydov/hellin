@@ -1,25 +1,70 @@
-.card-item {
+.how-do__list {
+    --card-gap: 15px;
+
+    @include mq(tab){
+        --card-item: 2;
+        --card-gap: 20px;
+
+
+}
+
+        @include mq(desk){
+            --card-item: 3; 
+            --card-gap: 30px; 
+        }
+
+
+} 
+
+.how-do__item {  
+
+    color: $text-color-secondary; 
+ 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    --card-item: 1;
     background-color: $text-color-white;
     box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
-    max-width: 280px;
-    min-height: 296px;
-    margin-bottom: 15px;
+    padding: 30px 20px;
+    transition: all 250ms linear;
 
-  
-    // width: calc((100% - 90px) / 6);
-    // margin-right: 15px;
+    @include mq(tab-only) {
+        br {display: none;}
+     
+    }
+        
+
+
    
-    // border-radius: 0px 0px 4px 4px;
+
+
+            @include mq(tab){            
+                padding: 35px 32px;
+            }
+
+            @include mq(desk){              
+                padding: 35px 28px 55px 28px;
+            }
+
+            &:hover,
+            &:focus {
+                background-color: $accent-color;
+                color: $text-color-white;
+            }
+
+            &:hover .how-do__text::before{
+                background-color: $text-color-white;
+            }
+
+
 }
 
-.title .how-do {
 
+
+  
+.how-do {
     text-align: center;
     font-weight: 800;
     font-size: 20px;
@@ -28,6 +73,19 @@
     letter-spacing: 0.03em;
 
     color:  $bg-color-dark;
+    margin-bottom: 30px;
+
+    @include mq(tab) {
+        font-size: 26px;
+
+    }
+
+    @include mq(desk) {
+        margin-bottom: 47px;
+        text-align: start;
+        font-size: 46px;
+
+    }
 }
 
 
@@ -39,51 +97,65 @@
     text-align: center;
     letter-spacing: 0.08em;
 
-    color: $bg-color-dark;
-    margin-bottom: 42px;
+    color: $bg-color-dark;   
+    margin-bottom: 15px;
+
 }
 
 
 .how-do__text {
- 
-    
+    width: 67%;
     font-weight: 500;
     font-size: 12px;
     line-height: 1.67;
     text-align: center;
     letter-spacing: 0.08em;
 
-    color: $text-color-secondary;
-    margin-bottom: 30px;
+    
+    
 }
 
 
 
 .how-do__icon {
-    fill:$accent-color;
+    fill:$accent-color;  
     margin-bottom: 20px;
+
+
     
 }
+
+.how-do__title,
+.how-do__icon {
+    transition: all 250ms linear;
+    .how-do__item:hover &,
+    .how-do__item:focus{
+        color:inherit;
+        fill:currentColor;
+    }
+}
+
 
 .how-do__list .how-do__text{
     position: relative;
 }
 
 .how-do__list .how-do__text::before {
-    content: "";
-    position: absolute;
-
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: center;
-    // align-items: center;
-    display: block;
-
-
-
+    content: "";    
+    display: block;  
     width: 20px;
     height: 2px;
+    margin-bottom: 20px;   
+    margin-left: auto;
+    margin-right: auto;
     background-color: $accent-color;
-   
+    transition: all 250ms linear;
+
+    @include mq(desk) {
+        margin-bottom: 15px;
+    }
 
 }
+
+
+ 
