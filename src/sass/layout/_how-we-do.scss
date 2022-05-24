@@ -1,0 +1,89 @@
+.card-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    --card-item: 1;
+    background-color: $text-color-white;
+    box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
+    max-width: 280px;
+    min-height: 296px;
+    margin-bottom: 15px;
+
+  
+    // width: calc((100% - 90px) / 6);
+    // margin-right: 15px;
+   
+    // border-radius: 0px 0px 4px 4px;
+}
+
+.title .how-do {
+
+    text-align: center;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 130%;   
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color:  $bg-color-dark;
+}
+
+
+.how-do__title {
+   
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.43;
+    text-align: center;
+    letter-spacing: 0.08em;
+
+    color: $bg-color-dark;
+    margin-bottom: 42px;
+}
+
+
+.how-do__text {
+ 
+    
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.67;
+    text-align: center;
+    letter-spacing: 0.08em;
+
+    color: $text-color-secondary;
+    margin-bottom: 30px;
+}
+
+
+
+.how-do__icon {
+    fill:$accent-color;
+    margin-bottom: 20px;
+    
+}
+
+.how-do__list .how-do__text{
+    position: relative;
+}
+
+.how-do__list .how-do__text::before {
+    content: "";
+    position: absolute;
+
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    display: block;
+
+
+
+    width: 20px;
+    height: 2px;
+    background-color: $accent-color;
+   
+
+}
