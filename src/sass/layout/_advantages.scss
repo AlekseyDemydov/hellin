@@ -1,0 +1,120 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.advantages {
+  background-color: $bg-color-main;
+  padding-top: 70px;
+  // padding-right: 45px;
+  padding-bottom: 70px;
+  // padding-left: 52px;
+}
+
+.advantages-list {
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+}
+
+.advantages-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  width: 100%;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  line-height: 1.64;
+  margin-right: -5px;
+  color: $text-color-main;
+}
+.advantages-item:last-child {
+  margin-bottom: 0;
+}
+
+.advantages-item::before {
+  display: inline-block;
+  content: ' ';
+  width: 60px;
+  height: 60px;
+  margin-right: 8px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+$icons: female-student, mobile-learning, insurance;
+
+@each $icon in $icons {
+  .advantages-item--#{$icon}::before {
+    background-image: url(../images/advantages/#{$icon}.svg);
+  }
+}
+
+.advantages-description {
+  width: 146px;
+}
+
+@media screen and (min-width: 768px) {
+  .advantages-list {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .advantages-item {
+    margin-right: 21px;
+    margin-bottom: 0;
+  }
+  .advantages-item:last-child {
+    margin-right: 0;
+  }
+
+  .advantages-description {
+    width: 146px;
+  }
+  .no-wrap {
+    white-space: nowrap;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .advantages-item {
+    font-size: 20px;
+    line-height: 1.64;
+    letter-spacing: 0.08em;
+    margin-right: 31px;
+  }
+
+  .advantages-item:last-child {
+    margin-right: 0;
+  }
+
+  .advantages-item::before {
+    display: inline-block;
+    content: ' ';
+    width: 99px;
+    height: 102px;
+    margin-right: -15px;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  $icons: female-student-desk, mobile-learning-desk, insurance-desk;
+
+  @each $icon in $icons {
+    .advantages-item--#{$icon}::before {
+      background-image: url(../images/advantages/#{$icon}.svg);
+    }
+  }
+
+  .advantages-description {
+    width: 239px;
+  }
+}
