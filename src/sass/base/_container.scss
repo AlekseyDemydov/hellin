@@ -1,21 +1,21 @@
 .container {
     margin: 0 auto;
-    width: 100%;
+    width: 100% ;
     padding: 0 15px;
     outline: invert tomato;
 
     @media screen and (min-width: 480px) {
-        width: 480px;
+        max-width: 310px;
         
     }
 
     @media screen and (min-width: 768px) {
-        width: 718px;
+        max-width: 718px;
         
     }
 
     @media screen and (min-width: 1366px) {
-        width: 1344px;
+        max-width: 1344px;
         
     }
 }
