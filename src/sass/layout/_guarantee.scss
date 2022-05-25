@@ -1,0 +1,142 @@
+.guarantee {
+    padding-top: 70px;
+    padding-bottom: 70px;
+
+    @include mq(desk) {
+        padding-top: 130px;
+        padding-bottom: 130px;
+
+
+    }
+
+}
+
+
+.guarantee_list {
+    background-color: $bg-color-secondary;
+
+
+    @include mq(mob) {
+        padding: 80px 20px 45px 20px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        min-width: 320px;
+    }
+
+    @include mq(tab) {
+        padding: 65px 65px 30px 65px;
+
+    }
+
+    @include mq(desk) {
+        padding: 65px 65px 30px 65px;
+
+    }
+
+}
+
+.guarantee_title {
+    margin-bottom: 30px;
+
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: $bg-color-dark;
+
+    @include mq(desk) {
+        font-size: 46px;
+    }
+
+}
+
+.guarantee_text {
+    position: relative;
+    top: -25px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.67;
+
+    color: #3D3D3D;
+
+
+    @include mq(tab) {
+        top: -24px;
+    }
+
+    @include mq(desk) {
+        font-size: 20px;
+        line-height: 1.4;
+        top: -36px;
+    }
+}
+
+.guarantee__item {
+    position: relative;
+    padding-left: 28px;
+
+
+
+    @include mq(tab) {
+        max-width: 91%;
+        padding-left: 32px;
+
+    }
+
+    @include mq(desk) {
+        top: 22px;
+        padding-left: 41px;
+        width: 91%;
+
+    }
+
+
+    &:not(:last-child) {
+
+        margin-bottom: 23px;
+        border-left: 1px dashed $text-color-secondary;
+        padding-bottom: 25px;
+
+        @include mq(tab) {
+            padding-bottom: 20px;
+
+        }
+    }
+
+}
+
+.guarantee__wrapper {
+    color: $accent-color;
+}
+
+.guarantee_list .guarantee_text::before {
+    position: absolute;
+    content: "";
+    top: 0%;
+    left: -35px;
+
+    display: block;
+    width: 15px;
+    height: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('../images/fire-orange.svg');
+
+
+    @include mq(tab) {
+        left: -40px;
+    }
+
+    @include mq(desk) {
+        left: -48px;
+        top: 3px;
+    }
+
+
+}
