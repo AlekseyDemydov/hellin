@@ -294,25 +294,20 @@
 }
 
 .program__thumb {
-  // border: 2px solid red;
-
   @media screen and (max-width: 768px) {
     width: 120px;
-    // height: 137px;
     position: absolute;
     right: -5px;
     bottom: -97px;
   }
   @media screen and (min-width: 768px) {
     width: 374px;
-    // height: 273px;
     position: absolute;
     right: -25px;
     bottom: -102px;
   }
   @media screen and (min-width: 1366px) {
     width: 672px;
-    // height: 502px;
     position: absolute;
     z-index: 99;
     left: -168px;
