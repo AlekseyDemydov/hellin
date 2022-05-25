@@ -157,10 +157,15 @@ z-index: 95;
     line-height: 17px;
     letter-spacing: 0.14em;
     text-transform: uppercase;
-    margin-left: auto;
+    
+      margin-left: auto;
+    
+    
     color: $accent-color;
     @media (min-width: 768px) and (max-width: 1366px) {
      margin-right: 101px;
+     margin-top: 30px;
+     margin-bottom: 30px;
       width: 260px;
       height: 48px;
       position: relative;
