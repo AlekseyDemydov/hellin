@@ -1,5 +1,5 @@
 header {
-  padding: 30px 0;
+  
 
   .box {
     display: flex;
@@ -7,11 +7,15 @@ header {
     justify-content: center;
     position: relative;
     z-index: 90;
-    a {
-      margin-right: auto;
-    }
+    
     
   }
+    .logo-link {
+      display: block;
+      margin-right: auto;
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
   .menu {
       
     @media screen and (max-width: 1366px) {
@@ -51,7 +55,7 @@ z-index: 95;
     opacity: 1;
     position: absolute;
       z-index: 95;
-    
+    position: fixed;
     @media screen and (max-width: 1366px) {
       width: 100vw;
       height: 100vh;
@@ -127,6 +131,7 @@ z-index: 95;
 
 .header {
   &-logo {
+    
     position: relative;
     z-index: 96;
     width: 128px;
@@ -221,7 +226,7 @@ border: none;
   z-index: 95;
  
   .icon-cross {
-    
+    fill:white;
     display: block;
   }
 
