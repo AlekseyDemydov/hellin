@@ -97,14 +97,22 @@
   margin-bottom: 43px;
 
   @include mq(tab) {
-    font-size: 16px;
-    line-height: 1.25;
-    max-width: 545;
+    font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+      text-align: center;
+      letter-spacing: 0.08em;
+    max-width: 545px;
   }
 
   @include mq(desk) {
-    font-size: 30px;
-    line-height: 1.23;
+    font-style: normal;
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 37px;
+      text-align: center;
+      letter-spacing: 0.08em;
     max-width: 1090px;
   }
 

@@ -1,23 +1,18 @@
 header {
-  
-
   .box {
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     z-index: 90;
-    
-    
   }
-    .logo-link {
-      display: block;
-      margin-right: auto;
-      padding-top: 30px;
-      padding-bottom: 30px;
-    }
+  .logo-link {
+    display: block;
+    margin-right: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
   .menu {
-      
     @media screen and (max-width: 1366px) {
       display: none;
     }
@@ -26,13 +21,11 @@ header {
   .backdrop-menu {
     display: flex;
 
-
     transition: opacity 250ms linear;
 
     width: 100%;
     opacity: 1;
     background: rgba(17, 21, 24, 0.9);
-
 
     @media screen and (min-width: 1366px) {
       display: none;
@@ -40,7 +33,7 @@ header {
 
     @media screen and (max-width: 1366px) {
       position: absolute;
-z-index: 95;
+      z-index: 90;
       pointer-events: none;
 
       flex-direction: column;
@@ -54,76 +47,63 @@ z-index: 95;
   .backdrop-menu.is-open {
     opacity: 1;
     position: absolute;
-      z-index: 95;
+    z-index: 90;
     position: fixed;
     @media screen and (max-width: 1366px) {
       width: 100vw;
       height: 100vh;
     }
-.modal-nav{
-    @media screen and (max-width:768px){
+    .modal-nav {
+      @media screen and (max-width: 768px) {
         display: flex;
         flex-direction: column;
         padding-left: 20px;
+        padding-top: 110px;
+      }
+      @media screen and (max-width: 1366px) {
+        padding-top: 160px;
+        margin: 0 auto;
+      }
     }
-    @media screen and (min-width:768px){
-        text-align: center;
-    }
-    
-}
     transition: opacity 250ms linear;
     pointer-events: visible;
 
     .header-button-mob {
-        background-color: $text-color-white;
-            border: 2px solid $accent-color;
-        
-            font-style: normal;
-            font-weight: 700;
-            font-size: 14px;
-            line-height: 17px;
-            letter-spacing: 0.14em;
-            text-transform: uppercase;
-           
-            color: $accent-color;
-        
-            
-            
-            width: 260px;
-            height: 48px;
+      background-color: transparent;
+      border: 2px solid $accent-color;
+
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 17px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+
+      color: $text-color-white;
+      margin-top: 50px;
+      width: 260px;
+      height: 48px;
       @media screen and (min-width: 768px) {
         display: none;
       }
     }
   }
 
-
-  
   .header-nav {
-    @media screen and (min-width:1366px){
-        display: flex;
-    }
-    @media screen and (max-width: 1366px) {
-      flex-direction: column;
-    padding-top: 110px;
-      
+    @media screen and (min-width: 1366px) {
+      display: flex;
     }
     
 
-    font-style: normal;
-    font-weight: 800;
-    font-size: 20px;
-    line-height: 180%;
-    /* or 36px */
-
-    letter-spacing: 0.03em;
-
-    color: #ffffff;
+    
     li:not(:last-child) {
       @media screen and (min-width: 1366px) {
         margin-right: 40px;
         display: flex;
         align-items: center;
+      }
+      @media screen and (max-width: 768px) {
+        margin-bottom: 15px;
       }
     }
   }
@@ -131,7 +111,6 @@ z-index: 95;
 
 .header {
   &-logo {
-    
     position: relative;
     z-index: 96;
     width: 128px;
@@ -157,15 +136,14 @@ z-index: 95;
     line-height: 17px;
     letter-spacing: 0.14em;
     text-transform: uppercase;
-    
-      margin-left: auto;
-    
-    
+
+    margin-left: auto;
+
     color: $accent-color;
     @media (min-width: 768px) and (max-width: 1366px) {
-     margin-right: 101px;
-     margin-top: 30px;
-     margin-bottom: 30px;
+      margin-right: 101px;
+      margin-top: 30px;
+      margin-bottom: 30px;
       width: 260px;
       height: 48px;
       position: relative;
@@ -179,17 +157,36 @@ z-index: 95;
   &-about,
   &-training,
   &-contacts {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 17px;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
+    @media screen and (min-width:1366px){
+font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+    }
+    
 
     color: $text-color-secondary;
     @media screen and (max-width: 1366px) {
       color: #ffffff;
     }
+    @media screen and (max-width:1366px) {
+          font-weight: 800;
+            font-size: 26px;
+            line-height: 180%;
+            letter-spacing: 0.03em;
+        }
+    @media screen and (max-width: 768px) {
+      font-weight: 800;
+      font-size: 20px;
+      line-height: 180%;
+      letter-spacing: 0.03em;
+    }
+
+        
+        
+     
   }
 
   &--active {
@@ -208,17 +205,20 @@ z-index: 95;
 .menu-button {
   display: inline-flex;
   position: absolute;
-background-color: transparent;
-border: none;
+  background-color: transparent;
+  border: none;
   right: 0;
   z-index: 95;
-  
 
   .icon-cross {
     display: none;
     fill: white;
-      width: 30px;
-      height: 30px;
+    
+  }
+
+  .icon-menu{
+    width: 21px;
+      height: 12px;
   }
 
   @media screen and (min-width: 1366px) {
@@ -227,18 +227,17 @@ border: none;
 }
 
 .menu-button.is-open {
- position: absolute;
+  position: absolute;
   z-index: 95;
- 
+
   .icon-cross {
-    fill:white;
+    fill: white;
     display: block;
   }
 
   .icon-menu {
     display: none;
+
     
-      width: 30px;
-      height: 30px;
   }
 }
