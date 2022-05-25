@@ -18,13 +18,10 @@
 @include mq(desk){
     padding-top: 100px;
 
-    background-image: url(../images/fair.png),linear-gradient(
+    background-image: url(../images/fair.svg),linear-gradient(
         #111518 560px,
         #FFFFFF 150px
        ) ;
-      
-       
-      
        background-repeat: no-repeat;
        background-position: 100%;
 }
