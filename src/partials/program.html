@@ -123,20 +123,39 @@
       </ul>
     </div>
     <div class="program__thumb">
-      <img
-        srcset="
-          ./images/prog/120t.png      120w,
-          ./images/prog/240.png       240w,
-          ./images/prog/374.png       374w,
-          ./images/prog/672d.png      672w,
-          ./images/prog/748t-x2.png   748w,
-          ./images/prog/1344d-x2.png 1344w
-        "
-        sizes="(min-width: 1366px) 672px, (min-width: 768px) 374px, (min-width:480px) 120px, (max-width:480px) 100%"
-        src="./images/prog/120t.png "
-        alt="English lesson in class"
-        class="program__photo"
-      />
+      <picture>
+        <source
+          srcset="./images/prog/672.webp 1x, ./images/prog/672-x2.webp 2x"
+          media="(min-width: 1366px)"
+          type="image/webp"
+        />
+        <source
+          srcset="./images/prog/672.png 1x, ./images/prog/672-x2.png 2x"
+          media="(min-width: 1366px)"
+          type="image/png"
+        />
+        <source
+          srcset="./images/prog/374.webp 1x, ./images/prog/374-x2.webp 2x"
+          media="(min-width: 768px)"
+          type="image/webp"
+        />
+        <source
+          srcset="./images/prog/374.png 1x, ./images/prog/374-x2.png 2x"
+          media="(min-width: 768px)"
+          type="image/png"
+        />
+        <source
+          srcset="./images/prog/120.webp 1x, ./images/prog/120-x2.webp 2x"
+          media="(max-width: 767px)"
+          type="image/webp"
+        />
+        <source
+          srcset="./images/prog/120.png 1x, ./images/prog/120-x2.png 2x"
+          media="(max-width: 767px)"
+          type="image/png"
+        />
+        <img src="./images/prog/120.png" alt="English lesson in class" />
+      </picture>
     </div>
   </div>
 </section>
