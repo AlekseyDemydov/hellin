@@ -18,11 +18,6 @@
   margin-bottom: 20px;
 }
 
-.about-commentation {
-  //   width: 403px ne nujno!!;
-  // display: inline-block;
-}
-
 .about-name {
   color: $text-color-main;
   font-weight: 800;
@@ -97,33 +92,24 @@
   font-weight: 500;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
+  .about-title {
+    font-size: 26px;
+    line-height: 1.2;
+  }
+
   .about-section {
     display: flex;
     width: 100%;
   }
 
   .about-photo {
-    margin-right: 42px;
+    margin-right: 41px;
     width: 243px;
     display: inline-block;
     margin-bottom: 0;
   }
 
-  .about-commentation {
-    width: 403px;
-    // display: inline-block;
-  }
-  .about-name::after {
-    width: 100%;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .about-title {
-    font-size: 26px;
-    line-height: 1.2;
-  }
   .about-name::after {
     width: 100%;
   }
@@ -135,9 +121,14 @@
     margin-bottom: 30px;
   }
 
+  .about-commentation {
+    width: 403px;
+  }
+
   .about-name::after {
     margin-top: 10px;
     margin-bottom: 20px;
+    width: 100%;
   }
 
   .about-list::after {
