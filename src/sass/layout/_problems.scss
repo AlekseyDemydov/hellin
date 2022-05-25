@@ -1,6 +1,7 @@
 .problems{
+   
     padding-top: 25px;
-    background:#111518;
+    
     background-image: linear-gradient(
  #111518 545px,
  #FFFFFF 150px
@@ -16,31 +17,22 @@
 }
 @include mq(desk){
     padding-top: 100px;
-    background-image: linear-gradient(
 
+    background-image: url(../images/fair.png),linear-gradient(
         #111518 560px,
         #FFFFFF 150px
-       );
-    background:#111518;
+       ) ;
+      
+       
+      
+       background-repeat: no-repeat;
+       background-position: 100%;
 }
 
 
 }
 
-.problems-fair{
-    background-image: url(../images/fair.png);
-    background-position: 1274px 88px;
-    background-repeat: no-repeat;
-    background-size: 446px;
-    
-    @include mq(relative){
-    background-image: url(../images/fair-2x.png);
-    background-position: 1274px 88px;
-    background-repeat: no-repeat;
-    background-size: 446px;
-    }
 
-}
 .problems-shadow{
     background: $text-color-white;
 box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
