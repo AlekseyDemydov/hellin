@@ -1,17 +1,66 @@
 <header>
+    <div class="backdrop-menu is-hidden" id="backdrop-menu" data-menu>
+        <nav class="modal-nav">
+            <ul class="header-nav">
+                <li class="header-studying header--active">
+                    <a href="" class="header-studying header--active">Studying program</a>
+                </li>
+                <li>
+                    <a href="" class="header-about">about</a>
+                </li>
+                <li>
+                    <a href="" class="header-training"> training options</a>
+                </li>
+                <li>
+                    <a href="" class="header-contacts">contacts</a>
+                </li>
+            </ul>
+            <button type="button" class="header-button-mob">consultation by phone</button>
+        </nav>
+    </div>
   <div class="container">
+      <section class="box">
     <a href="./index.html">
-      <img src="./images/logo.png" alt="logo" class="header-logo" />
+        <svg width="128" height="45">
+            <use class="header-logo" href="./images/logo.svg#icon-logo-black" ></use>
+        </svg>
+      
     </a>
+    <div class="menu">
     <nav>
-      <ul>
-        <a href=""><li class="header-studying header--active">Studying program</li></a>
-        <a href=""><li class="header-about">about</li></a>
-        <a href=""><li class="header-training">training options</li></a>
-        <a href=""></a>
-        <li class="header-contacts">contacts</li>
+      <ul class="header-nav">
+        <li class="header-studying header--active">
+          <a href="" class="header-studying header--active">Studying program</a>
+        </li>
+        <li>
+          <a href="" class="header-about">about</a>
+        </li>
+        <li>
+          <a href="" class="header-training"> training options</a>
+        </li>
+        <li>
+          <a href="" class="header-contacts">contacts</a>
+        </li>
       </ul>
+    
     </nav>
-    <button type="button" class="header-button">consultation by phone</button>
+    
+</div>
+    
+<button type="button" class="header-button">consultation by phone</button>
+    <button type="button"
+          class="menu-button"
+          aria-expanded="false"
+          aria-controls="backdrop-menu"
+          data-menu-button
+          >
+        <svg width="40" height="40">
+            <use class="icon-menu" href="./images/sprite.svg#icon-open-menu"></use>
+            <use class="icon-cross" href="./images/sprite.svg#icon-close-menu"></use>
+        </svg>
+        </button>
+        
   </div>
+</section>
 </header>
+
