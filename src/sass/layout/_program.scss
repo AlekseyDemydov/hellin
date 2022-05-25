@@ -22,7 +22,7 @@
 }
 
 .program__border {
-  @media screen and (max-width: 1365px) {
+  @media screen and (max-width: 1366px) {
     display: none;
   }
   @media screen and (min-width: 1366px) {
@@ -59,11 +59,11 @@
 }
 
 .program__block {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
     padding-left: 53px;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1365px) {
+  @media screen and (min-width: 768px) and (max-width: 1366px) {
     padding-left: 41px;
   }
 }
@@ -79,7 +79,7 @@
 .program__item {
   position: relative;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
     &:not(:last-child) {
       padding-left: 20px;
       padding-bottom: 40px;
@@ -89,7 +89,7 @@
       padding-bottom: 47px;
     }
   }
-  @media screen and (min-width: 768px) and (max-width: 1365px) {
+  @media screen and (min-width: 768px) and (max-width: 1366px) {
     &:not(:last-child) {
       padding-left: 40px;
       padding-bottom: 30px;
@@ -114,7 +114,7 @@
     }
   }
 
-  @media screen and (max-width: 1365px) {
+  @media screen and (max-width: 1366px) {
     &::before {
       position: absolute;
       left: -8px;
@@ -156,7 +156,7 @@
     margin-bottom: 25px;
   }
 
-  @media screen and (max-width: 1365px) {
+  @media screen and (max-width: 1366px) {
     &--first {
       line-height: 1;
       margin-bottom: 12px;
@@ -167,7 +167,7 @@
     margin-bottom: 42px;
   }
 
-  @media screen and (max-width: 1365px) {
+  @media screen and (max-width: 1366px) {
     &--last {
       line-height: 1;
       border-left: 3px solid $text-color-white;
@@ -176,7 +176,7 @@
     }
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1365px) {
+  @media screen and (min-width: 768px) and (max-width: 1366px) {
     &--last {
       padding-left: 40px;
     }
@@ -214,10 +214,10 @@
 
   &--last {
     margin-bottom: 25px;
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 768px) {
       padding-left: 20px;
     }
-    @media screen and (min-width: 768px) and (max-width: 1365px) {
+    @media screen and (min-width: 768px) and (max-width: 1366px) {
       padding-left: 40px;
     }
   }
@@ -253,23 +253,23 @@
   &--last {
     max-width: 67px;
 
-    @media screen and (min-width: 768px) and (max-width: 1365px) {
+    @media screen and (min-width: 768px) and (max-width: 1366px) {
       padding-left: 40px;
     }
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 768px) {
       padding-left: 20px;
     }
   }
 }
 
 .program__lessons {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
     &:not(:last-child) {
       margin-bottom: 8px;
     }
   }
-  @media screen and (min-width: 768px) and (max-width: 1365px) {
+  @media screen and (min-width: 768px) and (max-width: 1366px) {
     width: 150px;
     &:not(:last-child) {
       margin-right: 50px;
@@ -283,7 +283,7 @@
 }
 
 .program__wrapper {
-  @media screen and (min-width: 768px) and (max-width: 1365px) {
+  @media screen and (min-width: 768px) and (max-width: 1366px) {
     display: flex;
   }
 }
@@ -291,7 +291,7 @@
 .program__thumb {
   // border: 2px solid red;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
     width: 120px;
     // height: 137px;
     position: absolute;

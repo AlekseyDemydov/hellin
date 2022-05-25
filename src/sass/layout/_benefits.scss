@@ -3,11 +3,11 @@
   padding-top: 35px;
   padding-bottom: 35px;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
     background-image: linear-gradient(to bottom, $text-color-main 68%, $text-color-white 68%);
   }
 
-  @media screen and (min-width: 767px) and (max-width: 1365px) {
+  @media screen and (min-width: 768px) and (max-width: 1366px) {
     background-image: linear-gradient(to bottom, $text-color-main 50%, $text-color-white 50%);
     border-top: 1px solid $accent-color;
   }
@@ -65,7 +65,7 @@
 }
 
 .benefits__item {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
     &:not(:last-child) {
       margin-bottom: 30px;
     }
