@@ -125,7 +125,7 @@
       left: -8px;
     }
     &:first-child::before {
-      top: 0;
+      top: -1px;
     }
     &:nth-child(2)::before,
     &:nth-child(3)::before,
@@ -133,7 +133,7 @@
       top: 8px;
     }
     &:last-child::before {
-      top: 2px;
+      top: 3px;
       left: -5px;
     }
   }
