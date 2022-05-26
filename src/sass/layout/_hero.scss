@@ -164,14 +164,15 @@
   }
 
   &-photo {
+    
+    @media screen and (min-width: 768px) {
+      width: 370px;
+    }
     @media screen and (max-width: 768px) {
       margin-top: 54px;
     }
     @media screen and (max-width: 768px) {
       width: 208px;
-    }
-    @media screen and (min-width: 768px) {
-      width: 370px;
     }
     @media screen and (min-width: 1366px) {
       width: 842px;
