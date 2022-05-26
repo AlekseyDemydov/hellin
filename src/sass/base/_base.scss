@@ -4,6 +4,14 @@ body {
   font-style: normal;
   position: relative;
   
+
+     padding-top: 130px;
+     @include mq(tab){
+       padding-top: 170px;
+     }
+  
+ 
+  
   
   .wave{
   position: absolute;
@@ -46,6 +54,7 @@ ul {
 
 li {
   list-style-type: none;
+  cursor: pointer;
 }
 
 a {

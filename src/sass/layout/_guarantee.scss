@@ -14,23 +14,20 @@
 
 .guarantee_list {
     background-color: $bg-color-secondary;
+    padding: 70px 20px 20px 20px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    min-width: 320px;
 
-
-    @include mq(mob) {
-        padding: 80px 20px 45px 20px;
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        min-width: 320px;
-    }
 
     @include mq(tab) {
-        padding: 65px 65px 30px 65px;
+        padding: 55px 65px 5px 65px;
 
     }
 
     @include mq(desk) {
-        padding: 65px 65px 30px 65px;
+        padding: 79px 112px 16px 112px;
 
     }
 
@@ -63,14 +60,12 @@
     color: #3D3D3D;
 
 
-    @include mq(tab) {
-        top: -24px;
-    }
+  
 
     @include mq(desk) {
         font-size: 20px;
         line-height: 1.4;
-        top: -36px;
+        top: -29px;
     }
 }
 
@@ -87,7 +82,7 @@
     }
 
     @include mq(desk) {
-        top: 22px;
+        // top: 22px;
         padding-left: 41px;
         width: 91%;
 
@@ -96,14 +91,10 @@
 
     &:not(:last-child) {
 
-        margin-bottom: 23px;
+        margin-bottom: 30px;
         border-left: 1px dashed $text-color-secondary;
-        padding-bottom: 25px;
 
-        @include mq(tab) {
-            padding-bottom: 20px;
 
-        }
     }
 
 }
