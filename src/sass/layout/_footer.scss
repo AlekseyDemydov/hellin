@@ -2,6 +2,7 @@
   padding-top: 24px;
   padding-bottom: 30px;
   background-color: $bg-color-main;
+
 }
 .footer-bottom {
   padding-bottom: 20px;
@@ -115,6 +116,11 @@
 }
 
 @media screen and (min-width: 1366px) {
+  .footer-top {
+    padding-top: 52px;
+    padding-bottom: 56px;
+  }
+  
   .footer-logo-link {
     margin-right: 290px;
   }
