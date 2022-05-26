@@ -51,7 +51,6 @@
       background-size: cover;
       background-position: center;
     }
-
   }
 }
 
@@ -79,11 +78,10 @@
     max-width: 980px;
    
   }
-
 }
 
 .tatel-ckcent {
-  color: $accent-color
+  color: $accent-color;
 }
 
 .contacts__label {
@@ -117,7 +115,6 @@
       letter-spacing: 0.08em;
     max-width: 1090px;
   }
-
 }
 
 .labl-akcent {
@@ -137,10 +134,14 @@
   justify-content: center;
 
   @include mq(tab) {
-    max-width: 390px;
+    max-width: 280px;
   }
 
   @include mq(tab) {
+    max-width: 390px;
+  }
+
+  @include mq(desk) {
     max-width: 478px;
   }
 }
@@ -148,21 +149,19 @@
 
 .form-laibel:not(:last-of-type) {
   margin-bottom: 20px;
-
 }
 
 .form-input {
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   padding: 15px 28px;
   background-color: transparent;
   width: 100%;
   color: $text-color-white;
   transition: border-color, box-shadow var(--transition);
-
 }
-.form-input:hover{
- border-color: $accent-color;
- box-shadow: 0 4px 21px 0 rgb(255 107 8 / 59%);
+.form-input:hover {
+  border-color: $accent-color;
+  box-shadow: 0 4px 21px 0 rgb(255 107 8 / 59%);
 }
 
 .form-input::placeholder {
@@ -173,30 +172,40 @@
 }
 
 .form-btn {
+  width: 260px;
+
+  color: #ffffff;
+  background-color: $accent-color;
   font-weight: 700;
   font-size: 12px;
   line-height: 1.25;
-
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+  align-items: center;
+  text-align: center;
+
   border: none;
-  color: #FFFFFF;
-  padding: 14px 18px;
-  margin-top: 50px;
-  max-width: 260px;
-  background-color: $accent-color;
   cursor: pointer;
+
+  padding-top: 14px;
+  padding-bottom: 14px;
+  margin-top: 50px;
   transition: box-shadow var(--transition);
 
-  @include mq(desk){
+  @include mq(tab) {
+    padding-top: 17px;
+    padding-bottom: 16px;
+  }
+
+  @include mq(desk) {
+    width: 354px;
     font-size: 14px;
     line-height: 1.2;
-    padding: 27px 70px;
-      max-width: 354px;
+
+    padding-top: 27px;
+    padding-bottom: 26px;
   }
 }
-.form-btn:hover{
+.form-btn:hover {
   box-shadow: 0 8px 43px 0 rgb(255 107 8 / 59%);
 }
