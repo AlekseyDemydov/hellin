@@ -1,9 +1,9 @@
 .hero {
-  @media screen and (min-width: 1366px) {
+  @include mq(desk){
     margin-top: 30px;
     padding-bottom: 130px;
   }
-  @media screen and (max-width: 1366px) {
+  @include mq(tab) {
       margin-top: 70px;
       padding-bottom: 70px;
   }
@@ -124,7 +124,7 @@
     color: #ffffff;
 
     margin-top: 45px;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1366px) {
       width: 260px;
       height: 48px;
 
