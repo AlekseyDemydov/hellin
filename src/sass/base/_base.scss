@@ -1,33 +1,60 @@
-html {
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
-
 body {
   margin: 0 auto;
   font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  position: relative;
+  
+
+     padding-top: 130px;
+     @include mq(tab){
+       padding-top: 170px;
+     }
+  
+ 
+  
+  
+  .wave{
+  position: absolute;
+  z-index: -1;
+  background-image: url(../images/wave-bg.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  width: 100%;
+
+  @media screen and (max-width:1366px){
+    height: 600px;
+    
+  }
+  @media screen and (min-width:1366px){
+    height: 878px;
+    
+  }
+}
 }
 
-div,
-span {
+button{
+  cursor: pointer;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin: 0;
-  padding: 0;
-  border: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
 }
 
 li {
   list-style-type: none;
+  cursor: pointer;
 }
 
 a {
@@ -37,5 +64,4 @@ a {
 img {
   display: block;
   width: 100%;
-  height: auto;
 }
