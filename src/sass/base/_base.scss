@@ -4,7 +4,9 @@ body {
   font-style: normal;
   position: relative;
   
-
+@include mq(mob-only){
+  padding-top: 75px;
+}
      padding-top: 130px;
      @include mq(desk){
        padding-top: 170px;
