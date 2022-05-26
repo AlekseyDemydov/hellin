@@ -124,7 +124,7 @@
     color: #ffffff;
 
     margin-top: 45px;
-    @media screen and (min-width: 480px) {
+    @media screen and (max-width: 768px) {
       width: 260px;
       height: 48px;
 
@@ -147,7 +147,7 @@
   }
 
   &-content {
-    @media screen and (min-width: 480px) {
+    @media screen and (max-width: 768px) {
       width: 280px;
     }
 
@@ -165,7 +165,7 @@
     @media screen and (max-width: 768px) {
       margin-top: 54px;
     }
-    @media screen and (min-width: 480px) {
+    @media screen and (max-width: 768px) {
       width: 208px;
     }
     @media screen and (min-width: 768px) {
