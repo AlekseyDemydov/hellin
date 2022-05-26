@@ -11,26 +11,28 @@ body {
      }
   
  
- 
-  
-  
-  .wave{
-  position: absolute;
-  z-index: -1;
-  background-image: url(../images/wave-bg.svg);
-  background-repeat: no-repeat;
-  background-position: bottom;
-  width: 100%;
+ z-index: -1;
+ background-image: url(../images/wave-bg.svg);
+ background-repeat: no-repeat;
+ background-position: top center;
+ @include mq(desk){
+    background-size: auto 878px;
+ }
+ background-size: auto 600px;
+ width: 100%;
 
-  @media screen and (max-width:1366px){
-    height: 600px;
-    
-  }
-  @media screen and (min-width:1366px){
-    height: 878px;
-    
-  }
-}
+ @media screen and (max-width:1366px) {
+   height: 600px;
+
+ }
+
+ @media screen and (min-width:1366px) {
+   height: 878px;
+
+ }
+  
+  
+  
 }
 
 button{
