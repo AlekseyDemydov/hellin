@@ -2,7 +2,29 @@ body {
   margin: 0 auto;
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
+  position: relative;
+  
+  .wave{
+  position: absolute;
+  z-index: -1;
+  background-image: url(../images/wave-bg.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  width: 100%;
+
+  @media screen and (max-width:1366px){
+    height: 600px;
+    
+  }
+  @media screen and (min-width:1366px){
+    height: 878px;
+    
+  }
 }
+}
+
+
+
 
 h1,
 h2,
