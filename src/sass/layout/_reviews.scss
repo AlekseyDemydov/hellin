@@ -39,7 +39,6 @@
   }
 }
 .reviews_item {
-  
   margin-bottom: 52px;
   margin-left: auto;
   margin-right: auto;
@@ -98,11 +97,15 @@
 }
 
 .reviews_post {
-  @include mq(mob-only) {
+  text-align: center;
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
     max-width: 240px;
     margin-right: auto;
     margin-left: auto;
-    text-align: center;
+  }
+  @include mq(tab) {
+    text-align: left;
   }
 }
 
@@ -217,10 +220,14 @@
   border: none;
 }
 .reviews__btn-prev {
-  bottom: 27px;
-  left: 0px;
   background-image: url(../images/arrow-prev.svg);
   background-repeat: no-repeat;
+  bottom: 27px;
+  left: 20px;
+
+  @include mq(mob) {
+    left: 0px;
+  }
 
   @include mq(tab) {
     top: 50%;
@@ -233,10 +240,14 @@
 }
 
 .reviews__btn-next {
-  bottom: 27px;
-  right: 0px;
   background-image: url(../images/arrow-next.svg);
   background-repeat: no-repeat;
+  bottom: 27px;
+  right: 20px;
+
+  @include mq(mob) {
+    right: 0px;
+  }
 
   @include mq(tab) {
     top: 50%;
