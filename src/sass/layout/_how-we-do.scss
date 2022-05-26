@@ -6,6 +6,16 @@
              padding-top: 130px;
          }
 }
+.pozition{
+
+padding-bottom: 40px;
+@include mq(tab){
+    padding-bottom: 70px;
+}
+@include mq(desk){
+    padding-bottom: 130px;
+}
+}
 .how-do__list {
     --card-gap: 15px;
 
