@@ -7,12 +7,13 @@ header {
     top: 0;
     z-index: 100;
     display: inline-flex;
+    padding: 30px 0;
   .header {
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    padding: 30px 0;
+    
    
   }
   .logo-link {
@@ -73,12 +74,14 @@ header {
     }
     @include mq(mob-only){
       padding-top: 30px;
+      top: 0;
     }
     @include mq(mob){
       padding-top: 30px;
     }
-@include mq(tab) {
-  padding-top: 60px;
+@include mq(no-desk) {
+  
+  top: 0;
 
 }
     
