@@ -13,10 +13,9 @@
 
 .advantages {
   
-  padding-top: 70px;
-  // padding-right: 45px;
+  padding-top: 35px; 
   padding-bottom: 70px;
-  // padding-left: 52px;
+ 
 }
 
 .advantages-list {
@@ -65,6 +64,9 @@ $icons: female-student, mobile-learning, insurance;
 }
 
 @media screen and (min-width: 768px) {
+  .advantages {
+    padding-top: 21px;
+  }
   .advantages-list {
     flex-direction: row;
     justify-content: center;
@@ -86,7 +88,10 @@ $icons: female-student, mobile-learning, insurance;
 }
 
 @media screen and (min-width: 1366px) {
-  .advantages-item {
+  .advantages {
+    padding-top: 50px;
+  }
+  .advantages-item {    
     font-size: 20px;
     line-height: 1.64;
     letter-spacing: 0.08em;
