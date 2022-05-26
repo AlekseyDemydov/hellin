@@ -1,14 +1,14 @@
 .hero {
   @include mq(desk){
-    margin-top: 30px;
+    
     padding-bottom: 130px;
   }
   @include mq(tab) {
-      margin-top: 70px;
+      
       padding-bottom: 70px;
   }
   @media screen and (max-width: 768px) {
-      margin-top: 30px;
+      
       padding-bottom: 70px;
   }
   &-item {
