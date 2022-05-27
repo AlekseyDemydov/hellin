@@ -18,6 +18,8 @@
   }
 
   @include mq(tab) {
+    padding-top: 60px;
+    padding-bottom: 68px;
     background: #111518;
     background-image: url('../images/form/768t.png');
     background-repeat: no-repeat;
@@ -36,6 +38,8 @@
   }
 
   @include mq(desk) {
+    padding-top: 100px;
+    padding-bottom: 62px;
     background: #111518;
     background-image: url('../images/form/1680d.png');
     background-repeat: no-repeat;

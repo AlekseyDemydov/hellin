@@ -1,21 +1,24 @@
 .hero {
-  @include mq(desk){
-    
-    padding-bottom: 130px;
+
+  padding-bottom: 35px;
+
+  @include mq(desk){    
+    padding-bottom: 50px;
   }
-  @include mq(tab) {
-      
-      padding-bottom: 70px;
+  @include mq(tab) {      
+      padding-bottom: 22px;
   }
+
+  
   @media screen and (max-width: 768px) {
-      
+      padding-top: 30px;
       padding-bottom: 70px;
   }
   &-item {
-    @media screen and (min-width: 768px) {
+    @include mq(tab){ 
       display: flex;
     }
-    @media screen and (max-width: 768px) {
+    @include mq(mob-only){
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -124,6 +127,7 @@
     color: #ffffff;
     transition: box-shadow var(--transition);
 
+margin: 0 auto;
     margin-top: 45px;
     @media screen and (max-width: 1366px) {
       width: 260px;
@@ -163,14 +167,15 @@
   }
 
   &-photo {
-    @media screen and (max-width: 768px) {
-      margin-top: 54px;
-    }
-    @media screen and (max-width: 768px) {
-      width: 208px;
-    }
+    
     @media screen and (min-width: 768px) {
       width: 370px;
+    }
+    @media screen and (max-width: 767px) {
+      margin-top: 54px;
+    }
+    @media screen and (max-width: 767px) {
+      width: 208px;
     }
     @media screen and (min-width: 1366px) {
       width: 842px;
