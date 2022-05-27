@@ -125,6 +125,8 @@
     text-transform: uppercase;
     justify-content: center;
     color: #ffffff;
+    transition: box-shadow var(--transition);
+
 margin: 0 auto;
     margin-top: 45px;
     @media screen and (max-width: 1366px) {
@@ -179,4 +181,9 @@ margin: 0 auto;
       width: 842px;
     }
   }
+}
+
+.hero-button:hover{
+  box-shadow: 0 8px 43px 0 rgb(255 107 8 / 59%);
+
 }
